@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Quiz | Jeiron Antonio de la Cruz</title>
+    <meta name="description"
+      content="Test your knowledge of basic HTML and CSS with a four-question quiz.">
+    <meta name="author" content="Jeiron Antonio de la Cruz">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+
+    <main>
+        <form method="get">
+            <div class="question">
+                <label for="q1">
+                    <span>1.</span> What does CSS stand for?
+                </label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+
+            <div class="question">
+                <label for="q2">
+                    <span>2.</span> How do HTML and CSS work together
+                    to create a webpage?
+                </label>
+                <textarea id="q2" name="q2" rows="4" required></textarea>
+            </div>
+
+            <div class="question">
+                <label for="q3">
+                    <span>3.</span> Which HTML element creates a hyperlink?
+                </label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="p">&lt;p&gt;</option>
+                    <option value="a">&lt;a&gt;</option>
+                    <option value="h1">&lt;h1&gt;</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q4">
+                    <span>4.</span> What is the bottom margin in pixels
+                    in the following declaration?
+                </label>
+                <pre><code>margin: 10px 20px 30px 40px;</code></pre>
+                <input type="number" id="q4" name="q4" step="1" required>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Jeiron Antonio de la Cruz | WDD 130</p>
+    </footer>
+</body>
+
+</html>

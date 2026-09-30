@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table | Jeiron Antonio de la Cruz</title>
+    <meta name="description"
+      content="Table showing leagues, teams, records, and player counts for the WDD 130 course.">
+    <meta name="author" content="Jeiron Antonio de la Cruz">
+    <link rel="stylesheet" href="styles/table.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML Table Exercise</h1>
+    </header>
+
+    <main>
+        <table>
+            <caption>League Teams and Player Counts</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">League</th>
+                    <th scope="col">Team</th>
+                    <th scope="col">Record</th>
+                    <th scope="col">Player Count</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Southern</th>
+                    <td>Parana</td>
+                    <td>52-19</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Catarina</td>
+                    <td>49-24</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Western</th>
+                    <td>Lacerda</td>
+                    <td>92-70</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td>75-87</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Rondonia</td>
+                    <td>10-7</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="3" scope="row">Total Players</th>
+                    <td>92</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Jeiron Antonio de la Cruz | WDD 130</p>
+    </footer>
+</body>
+
+</html>

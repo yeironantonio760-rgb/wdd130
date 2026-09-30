@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 16px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #fff;
+}
+
+header,
+footer {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #123d52;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    gap: 1rem;
+}
+
+fieldset {
+    display: grid;
+    gap: 1rem;
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid #aaa;
+}
+
+legend {
+    padding: 0.5rem;
+    color: #123d52;
+    font-size: 1.3rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 0.5rem;
+    border: 1px solid #777;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    color: #222;
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea::placeholder {
+    color: #666;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    accent-color: #123d52;
+}
+
+button {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #123d52;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #235c35;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid #123d52;
+    outline-offset: 3px;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+label[for="feedback"] {
+    text-align: left;
+    padding-right: 0;
+}
+
+footer {
+    margin: 1.5rem auto 0;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+@media (max-width: 540px) {
+
+    .column1,
+    .column2 {
+        grid-template-columns: 1fr;
+    }
+
+    label {
+        text-align: left;
+        padding-right: 0;
+    }
+}
