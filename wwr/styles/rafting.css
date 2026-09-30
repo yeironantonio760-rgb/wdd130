@@ -264,3 +264,203 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+/* Contact Us page */
+
+.contact-intro {
+    padding: 32px 16px 16px;
+    text-align: center;
+}
+
+.contact-intro h1 {
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+    padding: 16px;
+}
+
+.contact-layout > section {
+    min-width: 0;
+    padding: 0;
+}
+
+.contact-layout h2 {
+    text-align: left;
+}
+
+.company-info address {
+    font-style: normal;
+}
+
+.company-info address p {
+    margin-bottom: 18px;
+}
+
+.company-info a {
+    color: var(--primary-color);
+    overflow-wrap: anywhere;
+}
+
+.map-note {
+    margin: 24px 0 12px;
+}
+
+.contact-map {
+    display: block;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #777;
+    border-radius: 6px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 18px;
+    padding: 20px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.contact-field {
+    display: grid;
+    gap: 6px;
+}
+
+.contact-field label,
+.contact-form legend {
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    font: inherit;
+}
+
+.contact-field input,
+.contact-field textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    color: var(--accent1-color);
+    background-color: #fff;
+}
+
+.contact-field textarea {
+    resize: vertical;
+}
+
+.contact-form fieldset {
+    display: grid;
+    gap: 12px;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #777;
+}
+
+.contact-form legend {
+    padding: 0 6px;
+    color: var(--primary-color);
+}
+
+.contact-choice {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-choice input {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    accent-color: var(--primary-color);
+}
+
+.contact-choice label {
+    cursor: pointer;
+}
+
+.contact-form button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #235c35;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+.contact-team {
+    margin-top: 24px;
+    border-top: 1px solid var(--secondary-color);
+    text-align: center;
+}
+
+.contact-team > p {
+    margin-bottom: 24px;
+}
+
+.employee-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.employee-gallery img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.employee-gallery figcaption {
+    margin-top: 10px;
+}
+
+.employee-gallery figcaption span {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .employee-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-gallery figure {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .contact-intro h1 {
+        font-size: 1.6rem;
+    }
+}

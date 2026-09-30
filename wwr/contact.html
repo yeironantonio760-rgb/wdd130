@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Dominican Rapids</title>
+    <meta name="description"
+      content="Contact Dominican Rapids with questions about rafting adventures, reservations, and our services in the Dominican Republic.">
+    <meta name="author" content="Jeiron Antonio de la Cruz">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Dominican Rapids logo" width="120">
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html" aria-current="page">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="contact-intro">
+            <h1>Contact Dominican Rapids</h1>
+            <p>Have a question? Our team is ready to help you plan your next adventure.</p>
+        </div>
+
+        <div class="contact-layout">
+            <section class="company-info">
+                <h2>Get in Touch</h2>
+
+                <!-- Sample contact information for this fictional course business. -->
+                <address>
+                    <p>
+                        <strong>Address:</strong><br>
+                        123 River Road<br>
+                        Jarabacoa, La Vega, Dominican Republic
+                    </p>
+
+                    <p>
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+18095550123">+1 (809) 555-0123</a>
+                    </p>
+
+                    <p>
+                        <strong>Email:</strong><br>
+                        <a href="mailto:info@dominicanrapids.example">
+                            info@dominicanrapids.example
+                        </a>
+                    </p>
+                </address>
+
+                <p class="map-note">Explore the Jarabacoa area on the map below.</p>
+
+                <iframe class="contact-map"
+                  src="https://www.google.com/maps?q=Jarabacoa%2C%20Dominican%20Republic&amp;output=embed"
+                  title="Map showing Jarabacoa in the Dominican Republic" width="400" height="250"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+                </iframe>
+            </section>
+
+            <section class="message-section">
+                <h2>Send Us a Message</h2>
+
+                <form class="contact-form" method="get">
+                    <div class="contact-field">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" autocomplete="name"
+                          required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Purpose of Your Message</legend>
+
+                        <div class="contact-choice">
+                            <input type="radio" id="general" name="purpose" value="general"
+                              required>
+                            <label for="general">General Inquiry</label>
+                        </div>
+
+                        <div class="contact-choice">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+
+                        <div class="contact-choice">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="contact-field">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="contact-choice">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="contact-team">
+            <h2>Meet Our Team</h2>
+            <p>We look forward to helping you enjoy an unforgettable river adventure.</p>
+
+            <!-- Sample employee profiles for this fictional course business. -->
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Carlos, our rafting guide" width="240"
+                      height="200" loading="lazy">
+                    <figcaption>
+                        <strong>Carlos Rodríguez</strong>
+                        <span>Lead Rafting Guide</span>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Ana, our reservations coordinator"
+                      width="240" height="200" loading="lazy">
+                    <figcaption>
+                        <strong>Ana Martínez</strong>
+                        <span>Reservations Coordinator</span>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Luis, our customer service representative"
+                      width="240" height="200" loading="lazy">
+                    <figcaption>
+                        <strong>Luis Pérez</strong>
+                        <span>Customer Service Representative</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dominican Rapids | Jeiron Antonio de la Cruz</p>
+
+        <nav class="socialmedia" aria-label="Social media">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.png" alt="Visit our Facebook page" width="32" height="32">
+            </a>
+
+            <a href="https://www.instagram.com">
+                <img src="images/instagram.png" alt="Visit our Instagram page" width="32"
+                  height="32">
+            </a>
+
+            <a href="https://www.youtube.com">
+                <img src="images/youtube.png" alt="Visit our YouTube channel" width="32"
+                  height="32">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
